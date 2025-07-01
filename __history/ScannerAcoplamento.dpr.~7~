@@ -1,0 +1,59 @@
+﻿program ScannerAcoplamento;
+
+{$APPTYPE CONSOLE}
+
+uses
+  System.SysUtils,
+  System.Generics.Collections,
+  uScannerRTTI in 'uScannerRTTI.pas',
+  uRelatorioCSV in 'uRelatorioCSV.pas',
+  uRelatorioTXT in 'uRelatorioTXT.pas',
+  uRelatorioHTML in 'uRelatorioHTML.pas',
+  uGeradorDependenciasDetalhadas in 'uGeradorDependenciasDetalhadas.pas',
+  uRelatorioCSVDetalhado in 'uRelatorioCSVDetalhado.pas';
+
+var
+  DependenciasRTTI: TDictionary<string, TList<string>>;
+  ListaDetalhada: TList<TDependenciaInfo>;
+  PastaFontes: string;
+begin
+  try
+    Writeln('=== Scanner de Acoplamentos Delphi ===');
+    Writeln;
+
+    // 1. Coleta com RTTI
+    Writeln('[1] Escaneando dependências com RTTI...');
+    DependenciasRTTI := TScannerRTTI.ColetarDependencias;
+
+    // 2. Geração dos relatórios básicos
+    Writeln('[2] Gerando relatórios TXT e CSV...');
+    TRelatorioTXT.Gerar(DependenciasRTTI, 'Relatorios\RelatorioAcoplamento.txt');
+    TRelatorioCSV.Gerar(DependenciasRTTI, 'Relatorios\RelatorioAcoplamento.csv');
+
+    DependenciasRTTI.Free;
+
+    // 3. Scanner por parsing estático
+    Writeln('[3] Escaneando fontes para relatório detalhado...');
+    PastaFontes := 'FontesProjeto'; // pode ler de arquivo config futuramente
+    ListaDetalhada := TGeradorDependencias.Gerar(PastaFontes);
+
+    // 4. Geração dos relatórios detalhados
+    Writeln('[4] Gerando relatórios HTML e CSV detalhados...');
+    TRelatorioHTML.Gerar(ListaDetalhada, 'Relatorios\RelatorioAcoplamento.html');
+    TRelatorioCSVDetalhado.Gerar(ListaDetalhada, 'Relatorios\RelatorioAcoplamentoDetalhado.csv');
+
+    ListaDetalhada.Free;
+
+    Writeln;
+    Writeln('✅ Análise concluída! Relatórios disponíveis na pasta "Relatorios".');
+  except
+    on E: Exception do
+      Writeln('❌ Erro ao executar: ', E.ClassName, ': ', E.Message);
+  end;
+
+  Writeln;
+  Write('Pressione ENTER para sair...');
+  Readln;
+
+
+end.

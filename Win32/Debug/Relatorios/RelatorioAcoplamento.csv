@@ -1,0 +1,5 @@
+﻿Classe,DependeDe
+"System.Generics.Collections.TList<uAnaliseReferenciasUses.TReferenciaUses>.TEnumerator","uAnaliseReferenciasUses.TReferenciaUses"
+"System.Generics.Collections.TEnumerator<uAnaliseReferenciasUses.TReferenciaUses>","uAnaliseReferenciasUses.TReferenciaUses"
+"System.Generics.Collections.TEnumerator<uRelatorioHTML.TDependenciaInfo>","uRelatorioHTML.TDependenciaInfo"
+"System.Generics.Collections.TList<uRelatorioHTML.TDependenciaInfo>.TEnumerator","uRelatorioHTML.TDependenciaInfo"

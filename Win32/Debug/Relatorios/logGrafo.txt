@@ -1,0 +1,51 @@
+﻿📄 Log de Diagnóstico do Grafo
+------------------------------
+Total de referências analisadas: 6380
+
+✅ Units incluídas no grafo: 633
+⛔ Units ignoradas por padrão: 113
+🔗 Conexões incluídas: 2229
+🚫 Conexões ignoradas: 4151
+
+Exemplos de units ignoradas:
+ - Data.DB
+ - FireDAC.Stan.Util
+ - Vcl.Graphics
+ - System.Net.HttpClientComponent
+ - Vcl.OleServer
+ - FireDAC.Stan.Option
+ - REST.Client
+ - FireDAC.DApt.Intf
+ - FireDAC.FMXUI.Wait
+ - Vcl.Samples.Spin
+ - vcl.Dialogs
+ - System.Net.HttpClient{$ENDIF}
+ - FireDAC.Phys.IBBase
+ - System.StrUtils
+ - Vcl.Imaging.jpeg
+ - Vcl.DBCtrls
+ - Vcl.Grids
+ - FireDAC.Stan.Param
+ - System.Types
+ - System.JSON
+ - System.Net.HttpClient
+ - Vcl.DBGrids
+ - FireDAC.Phys.PG
+ - Vcl.WinXCalendars
+ - FireDAC.DApt
+ - Vcl.Clipbrd
+ - Vcl.Dialogs
+ - FireDAC.Phys.PGDef
+ - VCL.Dialogs
+ - System.Inifiles
+ - FireDAC.Phys.SQLite
+ - System.Tether.AppProfile
+ - Vcl.ExtDlgs
+ - FireDAC.Phys.MySQL
+ - System.RegularExpressions
+ - FireDAC.Stan.Async
+ - System.Generics.Collections
+ - System.DateUtils
+ - Vcl.ExtCtrls
+ - System.Math
+ - Vcl.SvcMgr

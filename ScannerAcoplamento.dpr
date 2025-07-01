@@ -1,0 +1,101 @@
+﻿program ScannerAcoplamento;
+
+{$APPTYPE CONSOLE}
+
+uses
+  System.SysUtils,
+  System.IOUtils,
+  System.Generics.Collections,
+  uScannerRTTI in 'uScannerRTTI.pas',
+  uRelatorioCSV in 'uRelatorioCSV.pas',
+  uRelatorioTXT in 'uRelatorioTXT.pas',
+  uRelatorioHTML in 'uRelatorioHTML.pas',
+  uGeradorDependenciasDetalhadas in 'uGeradorDependenciasDetalhadas.pas',
+  uRelatorioCSVDetalhado in 'uRelatorioCSVDetalhado.pas',
+  uAnaliseReferenciasUses in 'uAnaliseReferenciasUses.pas',
+  uRelatorioReferenciasUsesCSV in 'uRelatorioReferenciasUsesCSV.pas',
+  uRelatorioHTMLGrafo in 'uRelatorioHTMLGrafo.pas',
+  uLogDebugGrafo in 'uLogDebugGrafo.pas',
+  uRelatorioHTMLGrafoTopN in 'uRelatorioHTMLGrafoTopN.pas';
+
+var
+  DependenciasRTTI: TDictionary<string, TList<string>>;
+  ListaDetalhada: TList<TDependenciaInfo>;
+  ListaUses: TList<TReferenciaUses>;
+  PastaFontes: string;
+
+begin
+  try
+    Writeln('=== Scanner de Acoplamentos Delphi ===');
+    Writeln;
+
+    // ⚙️ Lê a pasta de fontes via parâmetro
+    if ParamCount > 0 then
+      PastaFontes := ParamStr(1)
+    else
+    begin
+      Writeln('❌ Caminho da pasta dos fontes não informado.');
+      Writeln('Uso: ScannerAcoplamento.exe <caminho_da_pasta>');
+      Exit;
+    end;
+
+    if not TDirectory.Exists(PastaFontes) then
+    begin
+      Writeln('❌ A pasta informada não existe: ', PastaFontes);
+      Exit;
+    end;
+
+    // 🧠 [1] Escaneamento RTTI
+    Writeln('[1] Escaneando dependências em tempo de execução (RTTI)...');
+    DependenciasRTTI := TScannerRTTI.ColetarDependencias;
+
+    // 📄 Relatórios básicos
+    TDirectory.CreateDirectory('Relatorios');
+    TRelatorioTXT.Gerar(DependenciasRTTI,
+      'Relatorios\RelatorioAcoplamento.txt');
+    TRelatorioCSV.Gerar(DependenciasRTTI,
+      'Relatorios\RelatorioAcoplamento.csv');
+    DependenciasRTTI.Free;
+
+    // 🧪 [2] Escaneamento de código-fonte (.pas)
+    Writeln('[2] Escaneando fontes estáticos: ', PastaFontes);
+    ListaDetalhada := TGeradorDependencias.Gerar(PastaFontes);
+
+    // 📊 Relatórios detalhados
+    TRelatorioHTML.Gerar(ListaDetalhada,
+      'Relatorios\RelatorioAcoplamento.html');
+    TRelatorioCSVDetalhado.Gerar(ListaDetalhada,
+      'Relatorios\RelatorioAcoplamentoDetalhado.csv');
+    ListaDetalhada.Free;
+
+    // 🔁 [3] Análise de dependências por uses
+    Writeln('[3] Escaneando blocos uses e referências entre units...');
+    ListaUses := TAnaliseUses.AnalisarPasta(PastaFontes);
+    try
+      TLogDebugGrafo.Registrar(ListaUses); // 💡 Log de diagnóstico do grafo
+
+      TRelatorioReferenciasUsesCSV.Gerar(ListaUses,
+        'Relatorios\RelatorioReferenciasUses.csv');
+      TRelatorioHTMLGrafo.Gerar(ListaUses, 'Relatorios\grafoDependencias.html');
+
+      // ✅ Novo grafo refinado com layout hierárquico
+      TRelatorioHTMLGrafoTopN.Gerar(ListaUses,
+        'Relatorios\grafoTop100.html', 100);
+    finally
+      ListaUses.Free;
+    end;
+
+    Writeln;
+    Writeln('✅ Análise concluída com sucesso!');
+    Writeln('📁 Relatórios salvos na pasta "Relatorios".');
+
+  except
+    on E: Exception do
+      Writeln('❌ Erro: ', E.ClassName, ': ', E.Message);
+  end;
+
+  Writeln;
+  Write('Pressione ENTER para sair...');
+  Readln;
+
+end.

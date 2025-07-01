@@ -1,0 +1,15 @@
+﻿RELATÓRIO DE DEPENDÊNCIAS ENTRE CLASSES
+========================================
+
+System.Generics.Collections.TList<uAnaliseReferenciasUses.TReferenciaUses>.TEnumerator depende de:
+  - uAnaliseReferenciasUses.TReferenciaUses
+
+System.Generics.Collections.TEnumerator<uAnaliseReferenciasUses.TReferenciaUses> depende de:
+  - uAnaliseReferenciasUses.TReferenciaUses
+
+System.Generics.Collections.TEnumerator<uRelatorioHTML.TDependenciaInfo> depende de:
+  - uRelatorioHTML.TDependenciaInfo
+
+System.Generics.Collections.TList<uRelatorioHTML.TDependenciaInfo>.TEnumerator depende de:
+  - uRelatorioHTML.TDependenciaInfo
+

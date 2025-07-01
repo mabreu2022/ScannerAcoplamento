@@ -1,0 +1,88 @@
+unit uAnaliseReferenciasUses;
+
+interface
+
+uses
+  System.SysUtils,
+  System.IOUtils,
+  System.Classes,
+  System.Types,
+  System.Generics.Collections,
+  System.RegularExpressions;
+
+type
+  TReferenciaUses = record
+    Origem: string;
+    Referenciada: string;
+  end;
+
+  TAnaliseUses = class
+  public
+    class function AnalisarPasta(const PastaFontes: string): TList<TReferenciaUses>;
+  end;
+
+implementation
+
+class function TAnaliseUses.AnalisarPasta(const PastaFontes: string): TList<TReferenciaUses>;
+var
+  arquivos: TStringDynArray;
+  arquivo, linha, unitOrigem, usesLine: string;
+  LReader: TStreamReader;
+  i: Integer;
+  match: TMatch;
+  dentroDeUses: Boolean;
+  referencias: TList<TReferenciaUses>;
+  item: TReferenciaUses;
+  parts: TArray<string>;
+begin
+  referencias := TList<TReferenciaUses>.Create;
+  arquivos := TDirectory.GetFiles(PastaFontes, '*.pas', TSearchOption.soAllDirectories);
+
+  for arquivo in arquivos do
+  begin
+    unitOrigem := TPath.GetFileNameWithoutExtension(arquivo);
+    dentroDeUses := False;
+
+    try
+      LReader := TStreamReader.Create(arquivo, TEncoding.Default);
+      while not LReader.EndOfStream do
+      begin
+        linha := LReader.ReadLine.Trim;
+
+        if not dentroDeUses then
+        begin
+          if linha.ToLower.StartsWith('uses') then
+          begin
+            linha := linha.Substring(4).Trim; // Remove "uses"
+            dentroDeUses := True;
+          end
+          else
+            Continue;
+        end;
+
+        // Concatenar uses em várias linhas
+        while not linha.EndsWith(';') and not LReader.EndOfStream do
+          linha := linha + ' ' + LReader.ReadLine.Trim;
+
+        linha := linha.Replace('uses', '').Replace(';', '').Trim;
+        parts := linha.Split([',']);
+
+        for i := 0 to High(parts) do
+        begin
+          item.Origem := unitOrigem;
+          item.Referenciada := parts[i].Trim;
+          if item.Referenciada <> '' then
+            referencias.Add(item);
+        end;
+
+        dentroDeUses := False; // para interface e implementation
+      end;
+    finally
+      LReader.Free;
+    end;
+  end;
+
+  Result := referencias;
+end;
+
+end.

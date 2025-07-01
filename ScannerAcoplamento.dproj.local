@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2025/07/01 10:39:28.028,C:\FONTES\ScannerAcoplamento\ScannerAcoplamento.dproj=C:\Users\Mauricio Abreu\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2025/07/01 10:39:45.132,=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 10:40:58.878,C:\FONTES\ScannerAcoplamento\uScannerRTTI.pas=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 10:41:26.680,=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 10:41:45.851,C:\FONTES\ScannerAcoplamento\uRelatorioCSV.pas=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 10:42:08.029,=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 10:42:20.771,C:\FONTES\ScannerAcoplamento\uRelatorioTXT.pas=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 10:42:46.534,=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 10:42:53.851,C:\FONTES\ScannerAcoplamento\uRelatorioHTML.pas=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 10:43:27.746,=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 10:43:39.180,C:\FONTES\ScannerAcoplamento\uGeradorDependenciasDetalhadas.pas=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 10:44:44.629,=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 10:44:57.285,C:\FONTES\ScannerAcoplamento\uRelatorioCSVDetalhado.pas=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 11:39:11.507,=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 11:39:31.370,C:\FONTES\ScannerAcoplamento\uAnaliseReferenciasUses.pas=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 11:42:21.054,=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 11:43:02.729,C:\FONTES\ScannerAcoplamento\uRelatorioReferenciasUsesCSV.pas=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 11:48:33.477,=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 11:48:41.140,C:\FONTES\ScannerAcoplamento\uRelatorioHTMLGrafo.pas=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 12:02:35.349,=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 12:02:51.737,C:\FONTES\ScannerAcoplamento\uLogDebugGrafo.pas=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 12:08:39.886,=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+    <Transaction>2025/07/01 12:08:53.947,C:\FONTES\ScannerAcoplamento\uRelatorioHTMLGrafoTopN.pas=C:\FONTES\ScannerAcoplamento\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,401 @@
+C:\Fontes\admcondominios\Unit1.pas
+C:\Fontes\admcondominios\Unit2.pas
+C:\Fontes\admcondominios\Unit3.pas
+C:\Fontes\analisdordehints\UBuscaDocWikiGoogle.pas
+C:\Fontes\analisdordehints\UGeradorRelatorio.pas
+C:\Fontes\analisdordehints\UOpenRouterIA.pas
+C:\Fontes\analisdordehints\USugestoesCache.pas
+C:\Fontes\analisdordehints\UTipos.pas
+C:\Fontes\analisdordehints\Exemplos\uExemploTeste01.pas
+C:\Fontes\analisdordehints\ferramentavisual\Unit1.pas
+C:\Fontes\api\modules\restrequest4delphi\samples\client\delphi\src\Samples.Main.pas
+C:\Fontes\api\modules\restrequest4delphi\samples\client\lazarus\src\samples.main.pas
+C:\Fontes\api\modules\restrequest4delphi\samples\mercado-libre\delphi\src\Mercado.Libre.Consts.pas
+C:\Fontes\api\modules\restrequest4delphi\samples\mercado-libre\delphi\src\Mercado.Libre.View.pas
+C:\Fontes\api\modules\restrequest4delphi\samples\server-horse\delphi\Main.pas
+C:\Fontes\api\modules\restrequest4delphi\samples\server-horse\lazarus\main.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.Request.Adapter.Contract.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.Request.Client.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.Request.Contract.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.Request.FPHTTPClient.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.Request.ICS.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.Request.Indy.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.Request.NetHTTP.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.Request.Synapse.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.Response.Client.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.Response.Contract.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.Response.FPHTTPClient.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.Response.ICS.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.Response.Indy.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.Response.NetHTTP.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.Response.Synapse.pas
+C:\Fontes\api\modules\restrequest4delphi\src\RESTRequest4D.Utils.pas
+C:\Fontes\api\src\views\Views.Main.pas
+C:\Fontes\calculadora precos minimos\Controller\uController.Pedido.pas
+C:\Fontes\calculadora precos minimos\Controller\uController.Produto.pas
+C:\Fontes\calculadora precos minimos\Core\uConstantes.pas
+C:\Fontes\calculadora precos minimos\Core\uSessao.pas
+C:\Fontes\calculadora precos minimos\Dao\Dao.Dm.pas
+C:\Fontes\calculadora precos minimos\Model\uModel.Pedido.pas
+C:\Fontes\calculadora precos minimos\Model\uModel.Produto.pas
+C:\Fontes\calculadora precos minimos\view\uView.CadastroDePedidos.pas
+C:\Fontes\calculadora precos minimos\view\uView.CadastroDeProdutos.pas
+C:\Fontes\calculadora precos minimos\view\uView.Login.pas
+C:\Fontes\calculadora precos minimos\view\View.Principal.pas
+C:\Fontes\calculadoravendas\Unit1.pas
+C:\Fontes\calculadoravendas\CalculadoraPrecoVenda_CadastroProdutos\Unit1.pas
+C:\Fontes\calculadoravendas\CalculadoraPrecoVenda_ImpostosMarkup\Unit1.pas
+C:\Fontes\Cargas\cargas\DAO\Dao.Conexao.pas
+C:\Fontes\Cargas\cargas\DAO\DAO.ConexaoLicencas.pas
+C:\Fontes\Cargas\cargas\DAO\Dao.Login.pas
+C:\Fontes\Cargas\cargas\DAO\DM.pas
+C:\Fontes\Cargas\cargas\Display\UDisplay.pas
+C:\Fontes\Cargas\cargas\Encriptografar\View\View.Principal.pas
+C:\Fontes\Cargas\cargas\FontesTraducao\Traducao\uTraducaoDev.pas
+C:\Fontes\Cargas\cargas\Funcoes\Exception.pas
+C:\Fontes\Cargas\cargas\Funcoes\Funcoes.CNPJCPF.pas
+C:\Fontes\Cargas\cargas\Funcoes\Funcoes.Criptografia.pas
+C:\Fontes\Cargas\cargas\Funcoes\Funcoes.EnviarEmail.pas
+C:\Fontes\Cargas\cargas\Funcoes\Funcoes.Gerais.pas
+C:\Fontes\Cargas\cargas\Funcoes\Funcoes.PintarJante.pas
+C:\Fontes\Cargas\cargas\Funcoes\Funcoes.Seguranca.pas
+C:\Fontes\Cargas\cargas\Funcoes\Funcoes.Stream.pas
+C:\Fontes\Cargas\cargas\Funcoes\LogManager.pas
+C:\Fontes\Cargas\cargas\Funcoes\TrataException.pas
+C:\Fontes\Cargas\cargas\Gerar Contra Senha\UnitGerarContrasenha.pas
+C:\Fontes\Cargas\cargas\Model\Model.Agendamento.pas
+C:\Fontes\Cargas\cargas\Model\Model.Registro.pas
+C:\Fontes\Cargas\cargas\Painel\Unit1.pas
+C:\Fontes\Cargas\cargas\View\cxSchedulerEventEditor.pas
+C:\Fontes\Cargas\cargas\View\View.Agedamento.pas
+C:\Fontes\Cargas\cargas\View\View.CustomizedEventEditorForm.pas
+C:\Fontes\Cargas\cargas\View\View.FiltroRelatorioLiberacao.pas
+C:\Fontes\Cargas\cargas\View\View.FiltroRelatorioPorPeriodo.pas
+C:\Fontes\Cargas\cargas\View\View.GerenciaFila.pas
+C:\Fontes\Cargas\cargas\View\View.Loais.pas
+C:\Fontes\Cargas\cargas\View\View.Locais.pas
+C:\Fontes\Cargas\cargas\View\View.Login.pas
+C:\Fontes\Cargas\cargas\View\View.Motoristas.pas
+C:\Fontes\Cargas\cargas\View\View.PorPlaca.pas
+C:\Fontes\Cargas\cargas\View\View.Principal.pas
+C:\Fontes\Cargas\cargas\View\View.Registro.pas
+C:\Fontes\Cargas\cargas\View\View.Rel01.pas
+C:\Fontes\Cargas\cargas\View\View.Rel02.pas
+C:\Fontes\Cargas\cargas\View\View.Rel03.pas
+C:\Fontes\Cargas\cargas\View\View.RelLiberacao.pas
+C:\Fontes\Cargas\cargas\View\View.RelPorPlaca.pas
+C:\Fontes\Cargas\cargas\View\View.Veiculos.pas
+C:\Fontes\Cargas\cargas\View\View.VisualizaFila.pas
+C:\Fontes\Cargas\cargas\Visualizador\DAO\DM.pas
+C:\Fontes\Cargas\cargas\Visualizador\src\View.VisualizaFila.pas
+C:\Fontes\carregar vumeter em panel\Unit1.pas
+C:\Fontes\cotacaodolar\Unit1.pas
+C:\Fontes\CRM\CRMWebApp.pas
+C:\Fontes\CRM\CRM_DataModule.pas
+C:\Fontes\CRM\CRM_Session.pas
+C:\Fontes\CRM\FSD.Register.pas
+C:\Fontes\CRM\UnitCondominio.pas
+C:\Fontes\CRM\UnitCondominioCad.pas
+C:\Fontes\CRM\UnitCondonimos.pas
+C:\Fontes\CRM\UnitCondonimosCad.pas
+C:\Fontes\CRM\UnitPrincipal.pas
+C:\Fontes\CRM\Unit_D2Bridge_Server_Console.pas
+C:\Fontes\CRM\backup\UnitCondonimos.pas
+C:\Fontes\CRM\FSPix-VCL\uFrmPix.pas
+C:\Fontes\CRM\HelloWorld\FSD.HelloWorld.Wizard.pas
+C:\Fontes\CRM\HistoryProjects\FSD.HistoryProjectBinding.pas
+C:\Fontes\CRM\HistoryProjects\FSD.HistoryProjects.Binding.pas
+C:\Fontes\CRM\HistoryProjects\FSD.HistoryProjects.ContextMenu.pas
+C:\Fontes\CRM\HistoryProjects\FSD.HistoryProjects.Forms.pas
+C:\Fontes\CRM\HistoryProjects\FSD.HistoryProjects.Notifier.pas
+C:\Fontes\CRM\MainMenu\FSD.MainMenu.Information.pas
+C:\Fontes\CRM\MainMenu\FSD.MainMenu.Wizard.pas
+C:\Fontes\CRM\NewProject\FSD.NewProject.Creator.pas
+C:\Fontes\CRM\NewProject\FSD.NewProject.NewFormMain.Creator.pas
+C:\Fontes\CRM\NewProject\FSD.NewProject.NewFormMain.Source.pas
+C:\Fontes\CRM\NewProject\FSD.NewProject.NewFormMain.SourceFile.pas
+C:\Fontes\CRM\NewProject\FSD.NewProject.NewUnit.Behaviors.pas
+C:\Fontes\CRM\NewProject\FSD.NewProject.NewUnit.Component.ConnectionFiredac.pas
+C:\Fontes\CRM\NewProject\FSD.NewProject.NewUnit.Component.ConnectionInterfaces.pas
+C:\Fontes\CRM\NewProject\FSD.NewProject.SourceFile.pas
+C:\Fontes\CRM\NewProject\FSD.NewProject.Wizard.pas
+C:\Fontes\CRM\NewProject\FSD.NewProjects.Forms.pas
+C:\Fontes\CRM2\crm-master\CRMWebApp.pas
+C:\Fontes\CRM2\crm-master\CRM_DataModule.pas
+C:\Fontes\CRM2\crm-master\CRM_Session.pas
+C:\Fontes\CRM2\crm-master\D2BridgeFormTemplate.pas
+C:\Fontes\CRM2\crm-master\UnitCondominio.pas
+C:\Fontes\CRM2\crm-master\UnitCondominioCad.pas
+C:\Fontes\CRM2\crm-master\UnitPrincipal.pas
+C:\Fontes\CRM2\crm-master\Unit_D2Bridge_Server_Console.pas
+C:\Fontes\Curso Horse\controllers.cliente.pas
+C:\Fontes\Curso Horse\modules\horse\samples\delphi\vcl\src\Main.Form.pas
+C:\Fontes\Curso Horse\modules\horse\samples\delphi\vcl-ssl\src\Main.Form.pas
+C:\Fontes\Curso Horse\modules\horse\samples\delphi\winsvc\src\Main.Service.pas
+C:\Fontes\Curso Horse\modules\horse\samples\lazarus\apache\Apache.pas
+C:\Fontes\Curso Horse\modules\horse\samples\lazarus\lcl\src\views.main.pas
+C:\Fontes\Curso Horse\modules\horse\samples\lazarus\winsvc\daemonmain.pas
+C:\Fontes\Curso Horse\modules\horse\samples\lazarus\winsvc\daemonmanager.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Callback.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Commons.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Constants.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Core.Files.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Core.Group.Contract.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Core.Group.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Core.Param.Config.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Core.Param.Field.Brackets.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Core.Param.Field.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Core.Param.Header.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Core.Param.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Core.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Core.Route.Contract.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Core.Route.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Core.RouterTree.NextCaller.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Core.RouterTree.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.EnvironmentVariables.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Exception.Interrupted.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Exception.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Mime.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Proc.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Provider.Abstract.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Provider.Apache.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Provider.CGI.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Provider.Console.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Provider.Daemon.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Provider.FPC.Apache.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Provider.FPC.CGI.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Provider.FPC.Daemon.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Provider.FPC.FastCGI.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Provider.FPC.HTTPApplication.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Provider.FPC.LCL.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Provider.IOHandleSSL.Contract.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Provider.IOHandleSSL.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Provider.ISAPI.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Provider.VCL.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Request.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Response.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Rtti.Helper.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Rtti.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.Session.pas
+C:\Fontes\Curso Horse\modules\horse\src\Horse.WebModule.pas
+C:\Fontes\Curso Horse\modules\horse\src\ThirdParty.Posix.Syslog.pas
+C:\Fontes\Curso Horse\modules\horse\src\Web.WebConst.pas
+C:\Fontes\Curso Horse\modules\horse\tests\src\controllers\Controllers.Api.pas
+C:\Fontes\Curso Horse\modules\horse\tests\src\tests\Tests.Api.Console.pas
+C:\Fontes\Curso Horse\modules\horse\tests\src\tests\Tests.Api.Vcl.pas
+C:\Fontes\Curso Horse\modules\horse\tests\src\tests\Tests.Commons.pas
+C:\Fontes\Curso Horse\modules\horse\tests\src\tests\Tests.Horse.Core.Files.pas
+C:\Fontes\Curso Horse\modules\horse\tests\src\tests\Tests.Horse.Core.Param.pas
+C:\Fontes\Curso Horse\modules\horse-compression\src\Horse.Compression.pas
+C:\Fontes\Curso Horse\modules\horse-compression\src\Horse.Compression.Types.pas
+C:\Fontes\Curso Horse\modules\jhonson\src\Horse.Jhonson.pas
+C:\Fontes\dadosdauniao\Unit1.pas
+C:\Fontes\DelphiIsoVCL\Unit1.pas
+C:\Fontes\DelphiIsoVCL_player\Unit1.pas
+C:\Fontes\exemploravereports\Unit1.pas
+C:\Fontes\ferramenta\uPasModifierForm.pas
+C:\Fontes\lerjasonparagrid\uControllerJSON.pas
+C:\Fontes\lerjasonparagrid\uModelJSON.pas
+C:\Fontes\lerjasonparagrid\Unit1.pas
+C:\Fontes\lerjasonparagrid\Controller\uControllerJSON.pas
+C:\Fontes\lerjasonparagrid\Model\uModelJSON.pas
+C:\Fontes\lerjasonparagrid\View\Unit1.pas
+C:\Fontes\Loja\Loja\D2BridgeFormTemplate.pas
+C:\Fontes\Loja\Loja\LojaWebApp.pas
+C:\Fontes\Loja\Loja\Loja_Session.pas
+C:\Fontes\Loja\Loja\Unit1.pas
+C:\Fontes\Loja\Loja\Unit_D2Bridge_Server_Console.pas
+C:\Fontes\Loja\Loja\Unit_Login.pas
+C:\Fontes\Loja\Loja2\D2BridgeFormTemplate.pas
+C:\Fontes\Loja\Loja2\Loja2WebApp.pas
+C:\Fontes\Loja\Loja2\Loja2_Session.pas
+C:\Fontes\Loja\Loja2\Unit1.pas
+C:\Fontes\Loja\Loja2\Unit_D2Bridge_Server_Console.pas
+C:\Fontes\Loja\Loja3\Loja3\D2BridgeFormTemplate.pas
+C:\Fontes\Loja\Loja3\Loja3\Loja3WebApp.pas
+C:\Fontes\Loja\Loja3\Loja3\Loja3_Session.pas
+C:\Fontes\Loja\Loja3\Loja3\Unit1.pas
+C:\Fontes\Loja\Loja3\Loja3\Unit_D2Bridge_Server.pas
+C:\Fontes\Loja\Loja3\Loja3\Unit_Login.pas
+C:\Fontes\mostrawmi\Unit1.pas
+C:\Fontes\Nova pasta\geradorlicitacao\PartNumbers.pas
+C:\Fontes\Nova pasta\geradorlicitacao\UFabricante.pas
+C:\Fontes\Nova pasta\geradorlicitacao\UPrincipal.pas
+C:\Fontes\obter dados do sistema\Unit1.pas
+C:\Fontes\PDV_WEB_DNV\back_end\Controller\uLogin.Controler.pas
+C:\Fontes\PDV_WEB_DNV\back_end\DAO\uConnection.DAO.pas
+C:\Fontes\PDV_WEB_DNV\back_end\DAO\uLogin.DAO.pas
+C:\Fontes\Projeto Rodas\AnonThread.pas
+C:\Fontes\Projeto Rodas\Dao.Conexao.pas
+C:\Fontes\Projeto Rodas\FMX.BitmapHelper.pas
+C:\Fontes\Projeto Rodas\UCadastroCategorias.pas
+C:\Fontes\Projeto Rodas\UCadastroClientes.pas
+C:\Fontes\Projeto Rodas\UCadastroFabricantes.pas
+C:\Fontes\Projeto Rodas\UCadastroOrcamentos.pas
+C:\Fontes\Projeto Rodas\UCadastroVeiculos.pas
+C:\Fontes\Projeto Rodas\uDM.pas
+C:\Fontes\Projeto Rodas\UPrincipal.pas
+C:\Fontes\Projeto Rodas\URegistrar.pas
+C:\Fontes\Projeto Rodas\Controller\Controller.Categorias.pas
+C:\Fontes\Projeto Rodas\Controller\Controller.Clientes.pas
+C:\Fontes\Projeto Rodas\Controller\Controller.Contatos.pas
+C:\Fontes\Projeto Rodas\Controller\Controller.Fabricantes.pas
+C:\Fontes\Projeto Rodas\Controller\Controller.Produtos.pas
+C:\Fontes\Projeto Rodas\CriadorDeBancoWheelPro\uPrincipal.pas
+C:\Fontes\Projeto Rodas\DAO\DAO.Cadastro.Clientes.pas
+C:\Fontes\Projeto Rodas\DAO\DAO.Clientes.pas
+C:\Fontes\Projeto Rodas\DAO\Dao.Conexao.pas
+C:\Fontes\Projeto Rodas\DAO\DAO.ConexaoLicencas.pas
+C:\Fontes\Projeto Rodas\DAO\Dao.Login.pas
+C:\Fontes\Projeto Rodas\DAO\uDM.pas
+C:\Fontes\Projeto Rodas\Encriptografar\View\View.Principal.pas
+C:\Fontes\Projeto Rodas\Entity\Entity.Categorias.pas
+C:\Fontes\Projeto Rodas\Entity\Entity.Clientes.pas
+C:\Fontes\Projeto Rodas\Entity\Entity.Contatos.pas
+C:\Fontes\Projeto Rodas\Entity\Entity.Fabricantes.pas
+C:\Fontes\Projeto Rodas\Entity\Entity.Fornecedores.pas
+C:\Fontes\Projeto Rodas\Entity\Entity.Produtos.pas
+C:\Fontes\Projeto Rodas\Funcoes\Funcoes.CNPJCPF.pas
+C:\Fontes\Projeto Rodas\Funcoes\Funcoes.Criptografia.pas
+C:\Fontes\Projeto Rodas\Funcoes\Funcoes.EnviarEmail.pas
+C:\Fontes\Projeto Rodas\Funcoes\Funcoes.EnviarPedido.pas
+C:\Fontes\Projeto Rodas\Funcoes\Funcoes.Gerais.pas
+C:\Fontes\Projeto Rodas\Funcoes\Funcoes.PintarJante.pas
+C:\Fontes\Projeto Rodas\Funcoes\Funcoes.Seguranca.pas
+C:\Fontes\Projeto Rodas\Funcoes\LogManager.pas
+C:\Fontes\Projeto Rodas\Gerar Contra Senha\UnitGerarContrasenha.pas
+C:\Fontes\Projeto Rodas\Interfaces\Interfaces.Clientes.pas
+C:\Fontes\Projeto Rodas\Mobile\MainMobileApp.pas
+C:\Fontes\Projeto Rodas\Model\Model.Backup.pas
+C:\Fontes\Projeto Rodas\Model\Model.Categorias.pas
+C:\Fontes\Projeto Rodas\Model\Model.Clientes.pas
+C:\Fontes\Projeto Rodas\Model\Model.Contatos.pas
+C:\Fontes\Projeto Rodas\Model\Model.Fabricantes.pas
+C:\Fontes\Projeto Rodas\Model\Model.Produtos.pas
+C:\Fontes\Projeto Rodas\Model\Model.Registro.pas
+C:\Fontes\Projeto Rodas\obtendo numero serial do hd\Unit1.pas
+C:\Fontes\Projeto Rodas\obtendo numero serial do hd\UnitGerarSerial.pas
+C:\Fontes\Projeto Rodas\obtendo numero serial do hd\Unitsendemail.pas
+C:\Fontes\Projeto Rodas\View\Login.pas
+C:\Fontes\Projeto Rodas\View\UCadastroCategorias.pas
+C:\Fontes\Projeto Rodas\View\UCadastroClientes.pas
+C:\Fontes\Projeto Rodas\View\UCadastroFabricantes.pas
+C:\Fontes\Projeto Rodas\View\UCadastroOrcamentos.pas
+C:\Fontes\Projeto Rodas\View\UCadastroVeiculos.pas
+C:\Fontes\Projeto Rodas\View\uConfig.pas
+C:\Fontes\Projeto Rodas\View\URegistrar.pas
+C:\Fontes\Projeto Rodas\View\View.Backup.pas
+C:\Fontes\Projeto Rodas\View\View.Produtos.pas
+C:\Fontes\Projeto Rodas\WheelPro\AnonThread.pas
+C:\Fontes\Projeto Rodas\WheelPro\Dao.Conexao.pas
+C:\Fontes\Projeto Rodas\WheelPro\FMX.BitmapHelper.pas
+C:\Fontes\Projeto Rodas\WheelPro\UCadastroCategorias.pas
+C:\Fontes\Projeto Rodas\WheelPro\UCadastroClientes.pas
+C:\Fontes\Projeto Rodas\WheelPro\UCadastroFabricantes.pas
+C:\Fontes\Projeto Rodas\WheelPro\UCadastroOrcamentos.pas
+C:\Fontes\Projeto Rodas\WheelPro\UCadastroVeiculos.pas
+C:\Fontes\Projeto Rodas\WheelPro\uDM.pas
+C:\Fontes\Projeto Rodas\WheelPro\UPrincipal.pas
+C:\Fontes\Projeto Rodas\WheelPro\URegistrar.pas
+C:\Fontes\Projeto Rodas\WheelPro\Controller\Controller.Categorias.pas
+C:\Fontes\Projeto Rodas\WheelPro\Controller\Controller.Clientes.pas
+C:\Fontes\Projeto Rodas\WheelPro\Controller\Controller.Contatos.pas
+C:\Fontes\Projeto Rodas\WheelPro\Controller\Controller.Fabricantes.pas
+C:\Fontes\Projeto Rodas\WheelPro\Controller\Controller.Produtos.pas
+C:\Fontes\Projeto Rodas\WheelPro\CriadorDeBancoWheelPro\uPrincipal.pas
+C:\Fontes\Projeto Rodas\WheelPro\DAO\DAO.Cadastro.Clientes.pas
+C:\Fontes\Projeto Rodas\WheelPro\DAO\DAO.Clientes.pas
+C:\Fontes\Projeto Rodas\WheelPro\DAO\Dao.Conexao.pas
+C:\Fontes\Projeto Rodas\WheelPro\DAO\DAO.ConexaoLicencas.pas
+C:\Fontes\Projeto Rodas\WheelPro\DAO\Dao.Login.pas
+C:\Fontes\Projeto Rodas\WheelPro\DAO\uDM.pas
+C:\Fontes\Projeto Rodas\WheelPro\Encriptografar\View\View.Principal.pas
+C:\Fontes\Projeto Rodas\WheelPro\Entity\Entity.Categorias.pas
+C:\Fontes\Projeto Rodas\WheelPro\Entity\Entity.Clientes.pas
+C:\Fontes\Projeto Rodas\WheelPro\Entity\Entity.Contatos.pas
+C:\Fontes\Projeto Rodas\WheelPro\Entity\Entity.Fabricantes.pas
+C:\Fontes\Projeto Rodas\WheelPro\Entity\Entity.Fornecedores.pas
+C:\Fontes\Projeto Rodas\WheelPro\Entity\Entity.Produtos.pas
+C:\Fontes\Projeto Rodas\WheelPro\Funcoes\Funcoes.CNPJCPF.pas
+C:\Fontes\Projeto Rodas\WheelPro\Funcoes\Funcoes.Criptografia.pas
+C:\Fontes\Projeto Rodas\WheelPro\Funcoes\Funcoes.EnviarEmail.pas
+C:\Fontes\Projeto Rodas\WheelPro\Funcoes\Funcoes.EnviarPedido.pas
+C:\Fontes\Projeto Rodas\WheelPro\Funcoes\Funcoes.Gerais.pas
+C:\Fontes\Projeto Rodas\WheelPro\Funcoes\Funcoes.PintarJante.pas
+C:\Fontes\Projeto Rodas\WheelPro\Funcoes\Funcoes.Seguranca.pas
+C:\Fontes\Projeto Rodas\WheelPro\Funcoes\LogManager.pas
+C:\Fontes\Projeto Rodas\WheelPro\Gerar Contra Senha\UnitGerarContrasenha.pas
+C:\Fontes\Projeto Rodas\WheelPro\Interfaces\Interfaces.Clientes.pas
+C:\Fontes\Projeto Rodas\WheelPro\Mobile\MainMobileApp.pas
+C:\Fontes\Projeto Rodas\WheelPro\Model\Model.Backup.pas
+C:\Fontes\Projeto Rodas\WheelPro\Model\Model.Categorias.pas
+C:\Fontes\Projeto Rodas\WheelPro\Model\Model.Clientes.pas
+C:\Fontes\Projeto Rodas\WheelPro\Model\Model.Contatos.pas
+C:\Fontes\Projeto Rodas\WheelPro\Model\Model.Fabricantes.pas
+C:\Fontes\Projeto Rodas\WheelPro\Model\Model.Produtos.pas
+C:\Fontes\Projeto Rodas\WheelPro\Model\Model.Registro.pas
+C:\Fontes\Projeto Rodas\WheelPro\obtendo numero serial do hd\Unit1.pas
+C:\Fontes\Projeto Rodas\WheelPro\obtendo numero serial do hd\UnitGerarSerial.pas
+C:\Fontes\Projeto Rodas\WheelPro\obtendo numero serial do hd\Unitsendemail.pas
+C:\Fontes\Projeto Rodas\WheelPro\View\Login.pas
+C:\Fontes\Projeto Rodas\WheelPro\View\UCadastroCategorias.pas
+C:\Fontes\Projeto Rodas\WheelPro\View\UCadastroClientes.pas
+C:\Fontes\Projeto Rodas\WheelPro\View\UCadastroFabricantes.pas
+C:\Fontes\Projeto Rodas\WheelPro\View\UCadastroOrcamentos.pas
+C:\Fontes\Projeto Rodas\WheelPro\View\UCadastroVeiculos.pas
+C:\Fontes\Projeto Rodas\WheelPro\View\uConfig.pas
+C:\Fontes\Projeto Rodas\WheelPro\View\URegistrar.pas
+C:\Fontes\Projeto Rodas\WheelPro\View\View.Backup.pas
+C:\Fontes\Projeto Rodas\WheelPro\View\View.Produtos.pas
+C:\Fontes\projetos mobile\teste01\Unit1.pas
+C:\Fontes\salaoexecencias\Controller\uController.Categoria.pas
+C:\Fontes\salaoexecencias\Controller\uController.Cliente.pas
+C:\Fontes\salaoexecencias\Controller\uController.FotoProcedimento.pas
+C:\Fontes\salaoexecencias\Controller\uController.Procedimento.pas
+C:\Fontes\salaoexecencias\Controller\uController.Servico.pas
+C:\Fontes\salaoexecencias\Core\uConstantes.pas
+C:\Fontes\salaoexecencias\Dao\uDAO.Categoria.pas
+C:\Fontes\salaoexecencias\Dao\uDAO.Cliente.pas
+C:\Fontes\salaoexecencias\Dao\uDao.Dm.pas
+C:\Fontes\salaoexecencias\Dao\uDAO.FotoProcedimento.pas
+C:\Fontes\salaoexecencias\Dao\uDAO.Procedimento.pas
+C:\Fontes\salaoexecencias\Dao\uDAO.Servico.pas
+C:\Fontes\salaoexecencias\Dao\uDm.pas
+C:\Fontes\salaoexecencias\Infraestrutura\uSessao.pas
+C:\Fontes\salaoexecencias\Interfaces\uInterfaces.CategoriaController.pas
+C:\Fontes\salaoexecencias\Interfaces\uInterfaces.CategoriasController.pas
+C:\Fontes\salaoexecencias\Interfaces\uInterfaces.ClienteController.pas
+C:\Fontes\salaoexecencias\Interfaces\uInterfaces.FotoProcedimentoController.pas
+C:\Fontes\salaoexecencias\Interfaces\uInterfaces.ProcedimentoController.pas
+C:\Fontes\salaoexecencias\Interfaces\uInterfaces.ServicoControlle.pas
+C:\Fontes\salaoexecencias\Interfaces\uInterfaces.ServicoController.pas
+C:\Fontes\salaoexecencias\Model\uModel.Categoria.pas
+C:\Fontes\salaoexecencias\Model\uModel.Cliente.pas
+C:\Fontes\salaoexecencias\Model\uModel.FotoProcedimento.pas
+C:\Fontes\salaoexecencias\Model\uModel.Procedimento.pas
+C:\Fontes\salaoexecencias\Model\uModel.Servico.pas
+C:\Fontes\salaoexecencias\View\uView.CadastroCategorias.pas
+C:\Fontes\salaoexecencias\View\uView.CadastroDeClientes.pas
+C:\Fontes\salaoexecencias\View\uView.CadastroDeProcedimento.pas
+C:\Fontes\salaoexecencias\View\uView.CadastroDeServicos.pas
+C:\Fontes\salaoexecencias\View\uView.Configuracao.pas
+C:\Fontes\salaoexecencias\View\uView.FotoAmpliada.pas
+C:\Fontes\salaoexecencias\View\uView.FotoProcedimento.pas
+C:\Fontes\salaoexecencias\View\uView.Login.pas
+C:\Fontes\salaoexecencias\View\uView.Principal.pas
+C:\Fontes\ScannerAcoplamento\uGeradorDependenciasDetalhadas.pas
+C:\Fontes\ScannerAcoplamento\uRelatorioCSV.pas
+C:\Fontes\ScannerAcoplamento\uRelatorioCSVDetalhado.pas
+C:\Fontes\ScannerAcoplamento\uRelatorioHTML.pas
+C:\Fontes\ScannerAcoplamento\uRelatorioTXT.pas
+C:\Fontes\ScannerAcoplamento\uScannerRTTI.pas
+C:\Fontes\SolidChecker\CodeAnalyzer.pas
+C:\Fontes\SolidChecker\HtmlReporter.pas
+C:\Fontes\SolidChecker\JsonReporter.pas
+C:\Fontes\teste firebird wsl2\Unit1.pas
+C:\Fontes\teste mysql wsl container\Unit1.pas
+C:\Fontes\testeibdatabase\Unit1.pas
+C:\Fontes\testevianei\Unit1.pas
+C:\Fontes\video\Unit1.pas

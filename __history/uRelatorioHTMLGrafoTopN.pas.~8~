@@ -1,0 +1,155 @@
+unit uRelatorioHTMLGrafoTopN;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Classes,
+  System.Generics.Collections,
+  System.Generics.Defaults,
+  uAnaliseReferenciasUses;
+
+type
+  TRelatorioHTMLGrafoTopN = class
+  public
+    class procedure Gerar(const Referencias: TList<TReferenciaUses>; const NomeArquivo: string = 'grafoDependenciasTopN.html'; const LimiteTopN: Integer = 100);
+  end;
+
+implementation
+
+function ExtrairCamada(const UnitName: string): string;
+begin
+  if UnitName.ToLower.Contains('view') then Exit('View');
+  if UnitName.ToLower.Contains('controller') then Exit('Controller');
+  if UnitName.ToLower.Contains('dao') then Exit('DAO');
+  if UnitName.ToLower.Contains('service') then Exit('Service');
+  if UnitName.ToLower.Contains('model') then Exit('Model');
+  Result := 'Outro';
+end;
+
+function DeveIncluirNoGrafo(const NomeUnit: string): Boolean;
+begin
+  Result :=
+    not NomeUnit.ToLower.StartsWith('system.') and
+    not NomeUnit.ToLower.StartsWith('vcl.') and
+    not NomeUnit.ToLower.StartsWith('winapi.') and
+    not NomeUnit.ToLower.StartsWith('firedac.') and
+    not NomeUnit.ToLower.StartsWith('data.') and
+    not NomeUnit.ToLower.StartsWith('rest.') and
+    not NomeUnit.ToLower.StartsWith('soap.');
+end;
+
+function Sanitizar(const Nome: string): string;
+begin
+  Result := Nome;
+  Result := StringReplace(Result, '"', '', [rfReplaceAll]);
+  Result := StringReplace(Result, '{', '', [rfReplaceAll]);
+  Result := StringReplace(Result, '}', '', [rfReplaceAll]);
+  Result := StringReplace(Result, '$', '', [rfReplaceAll]);
+end;
+
+class procedure TRelatorioHTMLGrafoTopN.Gerar(const Referencias: TList<TReferenciaUses>; const NomeArquivo: string; const LimiteTopN: Integer);
+var
+  html: TStringList;
+  Referencia: TReferenciaUses;
+  CountTemp: Integer;
+  UnidadesCount: TDictionary<string, Integer>;
+  TopUnits: TList<string>;
+  EdgesFiltradas: TList<TReferenciaUses>;
+  unidade: string;
+begin
+  html := TStringList.Create;
+  UnidadesCount := TDictionary<string, Integer>.Create;
+  TopUnits := TList<string>.Create;
+  EdgesFiltradas := TList<TReferenciaUses>.Create;
+  try
+    for Referencia in Referencias do
+      if DeveIncluirNoGrafo(Referencia.Origem) and DeveIncluirNoGrafo(Referencia.Referenciada) then
+      begin
+        if UnidadesCount.TryGetValue(Referencia.Referenciada, CountTemp) then
+          UnidadesCount[Referencia.Referenciada] := CountTemp + 1
+        else
+          UnidadesCount[Referencia.Referenciada] := 1;
+      end;
+
+    TopUnits.AddRange(UnidadesCount.Keys.ToArray);
+    TopUnits.Sort(TComparer<string>.Construct(
+      function(const A, B: string): Integer
+      begin
+        Result := UnidadesCount[B] - UnidadesCount[A];
+      end));
+    if TopUnits.Count > LimiteTopN then
+      TopUnits.Count := LimiteTopN;
+
+    for Referencia in Referencias do
+      if DeveIncluirNoGrafo(Referencia.Origem) and DeveIncluirNoGrafo(Referencia.Referenciada) then
+        if TopUnits.Contains(Referencia.Origem) or TopUnits.Contains(Referencia.Referenciada) then
+          EdgesFiltradas.Add(Referencia);
+
+    html.Add('<html><head><meta charset="utf-8"><title>Grafo TopN</title>');
+    html.Add('<script type="text/javascript" src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>');
+    html.Add('<style> #grafo { width: 100%; height: 90vh; border: 1px solid lightgray; } </style></head><body>');
+    html.Add('<h2 style="font-family:sans-serif;">?? Grafo de Dependências (Top ' + LimiteTopN.ToString + ' units mais referenciadas)</h2>');
+
+    html.Add('<div style="font-family:sans-serif; font-size:13px;">');
+    html.Add('<strong>Legenda:</strong><br>');
+    html.Add('<span style="color:#3399FF;">? View</span> &nbsp;');
+    html.Add('<span style="color:#E74C3C;">? Controller</span> &nbsp;');
+    html.Add('<span style="color:#32C852;">? Service</span> &nbsp;');
+    html.Add('<span style="color:#FFB800;">? DAO</span> &nbsp;');
+    html.Add('<span style="color:#9B59B6;">? Model</span> &nbsp;');
+    html.Add('<span style="color:#999999;">? Outro</span> &nbsp;');
+    html.Add('<span style="color:red;">? View ? DAO</span>');
+    html.Add('</div><br>');
+
+    html.Add('<div id="grafo"></div><script>');
+    html.Add('var nodes = new vis.DataSet([');
+    for unidade in TopUnits do
+      html.Add(Format('{ id: "%0:s", label: "%0:s", group: "%1:s" },', [Sanitizar(unidade), ExtrairCamada(unidade)]));
+    html.Add(']);');
+
+    html.Add('var edges = new vis.DataSet([');
+    for Referencia in EdgesFiltradas do
+    begin
+      var origem := Sanitizar(Referencia.Origem);
+      var destino := Sanitizar(Referencia.Referenciada);
+      var camadaOrigem := ExtrairCamada(Referencia.Origem);
+      var camadaDestino := ExtrairCamada(Referencia.Referenciada);
+      if (camadaOrigem = 'View') and (camadaDestino = 'DAO') then
+        html.Add(Format('{ from: "%s", to: "%s", color: { color: "red" } },', [origem, destino]))
+      else
+        html.Add(Format('{ from: "%s", to: "%s" },', [origem, destino]));
+    end;
+    html.Add(']);');
+
+    html.Add('var container = document.getElementById("grafo");');
+    html.Add('var data = { nodes: nodes, edges: edges };');
+    html.Add('var options = {');
+    html.Add('  layout: {');
+    html.Add('    hierarchical: { enabled: true, direction: "UD", sortMethod: "hubsize", nodeSpacing: 140, levelSeparation: 180 }');
+    html.Add('  },');
+    html.Add('  physics: { enabled: false },');
+    html.Add('  groups: {');
+    html.Add('    View: { color:{background:"#D1E8FF",border:"#3399FF"} },');
+    html.Add('    Controller: { color:{background:"#FDE2E2",border:"#E74C3C"} },');
+    html.Add('    Service: { color:{background:"#D1FFD6",border:"#32C852"} },');
+    html.Add('    DAO: { color:{background:"#FFF4D1",border:"#FFB800"} },');
+    html.Add('    Model: { color:{background:"#E2D1FF",border:"#9B59B6"} },');
+    html.Add('    Outro: { color:{background:"#EEEEEE",border:"#999999"} }');
+    html.Add('  },');
+    html.Add('  nodes: { shape: "box", font: { size: 13, face: "Segoe UI" }, margin: 8 },');
+    html.Add('  edges: { arrows: { to: { enabled: true, scaleFactor: 0.5 } } }');
+    html.Add('};');
+    html.Add('var network = new vis.Network(container, data, options);');
+    html.Add('</script></body></html>');
+
+    html.SaveToFile(NomeArquivo, TEncoding.UTF8);
+  finally
+    html.Free;
+    TopUnits.Free;
+    UnidadesCount.Free;
+    EdgesFiltradas.Free;
+  end;
+end;
+
+end.

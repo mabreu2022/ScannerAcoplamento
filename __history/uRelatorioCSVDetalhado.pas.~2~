@@ -1,0 +1,37 @@
+unit uRelatorioCSVDetalhado;
+
+interface
+
+uses
+  System.Classes, System.SysUtils, System.Generics.Collections,
+  uRelatorioHTML; // usa TDependenciaInfo
+
+type
+  TRelatorioCSVDetalhado = class
+  public
+    class procedure Gerar(const Lista: TList<TDependenciaInfo>; const NomeArquivo: string = 'RelatorioAcoplamentoDetalhado.csv');
+  end;
+
+implementation
+
+{ TRelatorioCSVDetalhado }
+
+class procedure TRelatorioCSVDetalhado.Gerar(const Lista: TList<TDependenciaInfo>; const NomeArquivo: string);
+var
+  csv: TStringList;
+  item: TDependenciaInfo;
+begin
+  csv := TStringList.Create;
+  try
+    csv.Add('Unit,Linha,Classe,DependeDe,Sugestao');
+    for item in Lista do
+      csv.Add(Format('"%s",%d,"%s","%s","%s"',
+        [item.UnitName, item.Linha, item.Classe, item.DependeDe, item.Sugestao]));
+
+    csv.SaveToFile(NomeArquivo, TEncoding.UTF8);
+  finally
+    csv.Free;
+  end;
+end;
+
+end.
